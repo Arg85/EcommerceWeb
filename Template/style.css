@@ -12,7 +12,7 @@ body{
     font-size:1.6rem;
     font-family: 'Kaisei HarunoUmi', serif;
 }
-.grid-container{
+.gridContainer{
     display:grid;
     grid-template-areas: 
     'header'
@@ -55,6 +55,30 @@ main{
     grid-area:main;
     background:green;
     padding:1rem;
+}
+.gridCards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+}
+.gridCard{
+    border:3px solid red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gridCard img{
+    height:100px;
+    width:100px;
+}
+.cardBody{
+    background:purple;
+    width:100%;
+    
+}
+.rating span{
+    color:#f0c040;
+    margin:0.1rem;
 }
 footer{
     grid-area:footer;
